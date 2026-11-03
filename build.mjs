@@ -138,7 +138,7 @@ ${profil.titre} ${profil.intro}
 
 ### En ligne
 
-${enLigne.map((p) => `- [${p.nom}](${p.liens[0].url}) : ${p.resume.split(/[.:]/)[0]}.`).join('\n')}
+${enLigne.map((p) => `- [${p.nom}](${p.liens[0].url}) : ${p.resume.split(/[.:]/)[0].trim()}.`).join('\n')}
 
 ### En construction
 

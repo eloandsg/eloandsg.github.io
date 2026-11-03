@@ -7,8 +7,8 @@ Je construis vite, en public. Fondateur d'Eloan DSG, une agence d'automatisation
 ### En ligne
 
 - [Loopea](https://loopea.app) : App de suivi d'habitudes avec une carte récap partageable, façon Strava.
-- [AfterShows](https://aftershows.app) : Un livre souvenir pour chaque concert ou festival .
-- [AfterMags](https://mags.aftershows.app) : Le média d'actus musique d'AfterShows .
+- [AfterShows](https://aftershows.app) : Un livre souvenir pour chaque concert ou festival.
+- [AfterMags](https://mags.aftershows.app) : Le média d'actus musique d'AfterShows.
 
 ### En construction
 
