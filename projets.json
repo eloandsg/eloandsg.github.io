@@ -2,7 +2,7 @@
   "profil": {
     "nom": "Eloan",
     "titre": "Je construis vite, en public.",
-    "intro": "Fondateur d'Eloan DSG, une agence d'automatisation IA pour les agences immobilières indépendantes. En parallèle, je lance des micro-projets pour apprendre à livrer plutôt qu'à planifier. Voici ce que j'ai construit, ce qui tourne, et ce qui arrive.",
+    "intro": "J'accompagne des entreprises à intégrer l'IA et l'automatisation dans leurs processus. En parallèle, je lance des micro-projets pour apprendre à livrer plutôt qu'à planifier. Voici ce que j'ai construit, ce qui tourne, et ce qui arrive.",
     "liens": [
       { "label": "GitHub", "url": "https://github.com/eloandsg" }
     ]
@@ -82,9 +82,9 @@
     {
       "id": "chat-widgets",
       "nom": "Chat Widgets",
-      "resume": "L'outil de l'agence pour habiller les chats n8n des démos : widgets en popup ou intégrés, éditeur avec aperçu en direct.",
+      "resume": "Un outil pour habiller les chats n8n des démos : widgets en popup ou intégrés, éditeur avec aperçu en direct.",
       "statut": "en-ligne",
-      "categorie": "Agence",
+      "categorie": "Automatisation",
       "annee": "2026",
       "stack": ["Next.js", "Vercel"],
       "liens": [],
@@ -95,7 +95,7 @@
       "nom": "Horax Workers Hub",
       "resume": "L'interface web de mes agents IA (prospection, contenu, veille). Partie d'un template, retravaillée et fermée au public pour un usage perso.",
       "statut": "en-ligne",
-      "categorie": "Agence",
+      "categorie": "Automatisation",
       "annee": "2026",
       "stack": ["Next.js", "Supabase", "Vercel AI SDK"],
       "liens": [],
