@@ -11,7 +11,7 @@
     "en-ligne": "En ligne",
     "en-construction": "En construction",
     "en-local": "En local",
-    "idee": "Idée"
+    "realise": "Réalisé"
   },
   "projets": [
     {
@@ -24,7 +24,6 @@
       "stack": ["Next.js", "Supabase", "Vercel"],
       "liens": [{ "label": "Ouvrir l'app", "url": "https://loopea.app" }],
       "capture": "assets/shots/loopea.jpg",
-      "accent": "#c8f52a",
       "vedette": true
     },
     {
@@ -37,21 +36,7 @@
       "stack": ["Next.js", "Supabase", "Vercel"],
       "liens": [{ "label": "Ouvrir l'app", "url": "https://aftershows.app" }],
       "capture": "assets/shots/aftershows.jpg",
-      "accent": "#e8590c",
       "vedette": true
-    },
-    {
-      "id": "aftermags",
-      "nom": "AfterMags",
-      "resume": "Le média d'actus musique d'AfterShows : tournées, festivals, sorties, coulisses. Un site séparé qui nourrit l'app.",
-      "statut": "en-ligne",
-      "categorie": "Apps",
-      "annee": "2026",
-      "stack": [],
-      "liens": [{ "label": "Lire le mag", "url": "https://mags.aftershows.app" }],
-      "capture": "assets/shots/aftermags.jpg",
-      "accent": "#8b7cf6",
-      "vedette": false
     },
     {
       "id": "n8n-checkup",
@@ -62,8 +47,7 @@
       "annee": "2026",
       "stack": ["Node.js"],
       "liens": [],
-      "note": "Publication prochaine",
-      "vedette": false
+      "note": "Publication prochaine"
     },
     {
       "id": "openslot",
@@ -73,8 +57,7 @@
       "categorie": "Outils",
       "annee": "2026",
       "stack": ["Next.js", "Prisma", "SQLite"],
-      "liens": [],
-      "vedette": false
+      "liens": []
     },
     {
       "id": "page-liens",
@@ -84,8 +67,17 @@
       "categorie": "Outils",
       "annee": "2026",
       "stack": ["Node.js"],
-      "liens": [],
-      "vedette": false
+      "liens": []
+    },
+    {
+      "id": "bot-discord",
+      "nom": "Bot Discord",
+      "resume": "Un bot Discord développé avec l'aide de l'IA.",
+      "statut": "realise",
+      "categorie": "Outils",
+      "annee": "2026",
+      "stack": [],
+      "liens": []
     },
     {
       "id": "chat-widgets",
@@ -96,8 +88,7 @@
       "annee": "2026",
       "stack": ["Next.js", "Vercel"],
       "liens": [],
-      "note": "Outil interne",
-      "vedette": false
+      "note": "Outil interne"
     },
     {
       "id": "horax-hub",
@@ -108,20 +99,7 @@
       "annee": "2026",
       "stack": ["Next.js", "Supabase", "Vercel AI SDK"],
       "liens": [],
-      "note": "Accès privé",
-      "vedette": false
-    },
-    {
-      "id": "eclipse",
-      "nom": "Eclipse",
-      "resume": "Un cercle privé Discord d'entrepreneurs ambitieux, avec son bot maison (sondages, check-ins, tickets) et un dashboard d'administration.",
-      "statut": "en-ligne",
-      "categorie": "Communauté",
-      "annee": "2026",
-      "stack": ["discord.js", "Supabase"],
-      "liens": [],
-      "note": "Cercle privé",
-      "vedette": false
+      "note": "Accès privé"
     },
     {
       "id": "motion",
@@ -131,49 +109,17 @@
       "categorie": "Contenu",
       "annee": "2026",
       "stack": ["HyperFrames", "Three.js", "Gemini"],
-      "liens": [],
-      "vedette": false
+      "liens": []
     },
     {
       "id": "foody",
       "nom": "Foody",
-      "resume": "Un planificateur de repas de la semaine pour ma famille : nombre de personnes par repas, recettes sans répétition, liste de courses.",
+      "resume": "Un planificateur de repas de la semaine : nombre de personnes par repas, recettes sans répétition, liste de courses.",
       "statut": "en-local",
       "categorie": "Perso",
       "annee": "2026",
       "stack": ["Node.js"],
-      "liens": [],
-      "vedette": false
-    },
-    {
-      "id": "le-refuge",
-      "nom": "Le Refuge",
-      "resume": "Un jeu de survie Roblox dans l'esprit de The Walking Dead : camp de base, fouille, zombies attirés par le bruit, sac à dos limité.",
-      "statut": "en-construction",
-      "categorie": "Jeux",
-      "annee": "2026",
-      "stack": ["Roblox", "Luau"],
-      "liens": [],
-      "vedette": false
-    },
-    {
-      "id": "vinyle",
-      "nom": "Vinyle",
-      "resume": "Une nouvelle interface pour Apple Music : des playlists en vinyles animés et des widgets, sur iPhone et Mac.",
-      "statut": "idee",
-      "categorie": "Apps",
-      "annee": "2026",
-      "stack": ["SwiftUI", "MusicKit"],
-      "liens": [],
-      "vedette": false
+      "liens": []
     }
-  ],
-  "archives": [
-    { "nom": "NexusBot", "detail": "Bot Discord", "annee": "2026" },
-    { "nom": "xCore", "detail": "Bot Discord", "annee": "2026" },
-    { "nom": "Bots musique Discord", "detail": "Deux versions d'un bot de lecture musicale", "annee": "2026" },
-    { "nom": "Sites vitrines d'agence", "detail": "Premières versions du site de l'agence", "annee": "2026" },
-    { "nom": "Marketplace IA", "detail": "Landing d'un concept de place de marché pour l'automatisation, le dev et l'IA", "annee": "2026" },
-    { "nom": "After Show V1", "detail": "Le premier MVP d'AfterShows, un réseau pour loguer ses concerts", "annee": "2026" }
   ]
 }

@@ -4,7 +4,7 @@ Site vitrine de mes projets, publié sur GitHub Pages : https://eloandsg.github.
 
 ## Ajouter ou modifier un projet
 
-Tout vit dans `projets.json` (profil, projets, archives). Puis :
+Tout vit dans `projets.json` (profil, projets). Puis :
 
 ```
 node build.mjs
@@ -12,7 +12,7 @@ node build.mjs
 
 Le script génère `index.html` (le site) et `profil/README.md` (le README du profil GitHub, dépôt `eloandsg/eloandsg`). Aucune dépendance, Node 20+.
 
-Champs d'un projet : `id`, `nom`, `resume`, `statut` (`en-ligne`, `en-construction`, `en-local`, `idee`), `categorie`, `annee`, `stack`, `liens` (`label` + `url`), `capture` (optionnel, `assets/shots/`), `accent`, `vedette` (grande carte en tête de page), `note` (texte à la place du lien, ex. « Accès privé »).
+Champs d'un projet : `id`, `nom`, `resume`, `statut` (`en-ligne`, `en-construction`, `en-local`, `realise`), `categorie`, `annee`, `stack`, `liens` (`label` + `url`), `capture` (optionnel, `assets/shots/`), `vedette` (aussi montré en grande carte dans « À essayer en ligne », en bas de page ; demande une `capture`), `note` (texte à la place du lien, ex. « Accès privé »).
 
 ## Règles
 

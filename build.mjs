@@ -11,10 +11,9 @@ const SITE = 'https://eloandsg.github.io'
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
 
-const { profil, statuts, projets, archives } = data
+const { profil, statuts, projets } = data
 const vedettes = projets.filter((p) => p.vedette)
-const autres = projets.filter((p) => !p.vedette)
-const categories = [...new Set(autres.map((p) => p.categorie))]
+const categories = [...new Set(projets.map((p) => p.categorie))]
 const aujourdhui = new Date().toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
 
 const statut = (p) =>
@@ -30,8 +29,8 @@ const liens = (p) =>
 const stack = (p) => (p.stack.length ? `<p class="stack">${p.stack.map(esc).join(' / ')}</p>` : '')
 
 const carteVedette = (p) => `
-      <article class="carte vedette" style="--accent:${esc(p.accent)}">
-        <img src="${esc(p.capture)}" alt="Capture de ${esc(p.nom)}" loading="lazy" width="1200" height="750">
+      <article class="carte vedette">
+        <img src="${esc(p.capture)}" alt="Capture de ${esc(p.nom)}" loading="lazy" width="1200" height="500">
         <div class="corps">
           <div class="entete"><h3>${esc(p.nom)}</h3>${statut(p)}</div>
           <p class="resume">${esc(p.resume)}</p>
@@ -41,8 +40,7 @@ const carteVedette = (p) => `
       </article>`
 
 const carte = (p) => `
-      <article class="carte" data-cat="${esc(p.categorie)}"${p.accent ? ` style="--accent:${esc(p.accent)}"` : ''}>
-        ${p.capture ? `<img src="${esc(p.capture)}" alt="Capture de ${esc(p.nom)}" loading="lazy" width="1200" height="300">` : ''}
+      <article class="carte" data-cat="${esc(p.categorie)}">
         <div class="corps">
           <div class="entete"><h3>${esc(p.nom)}</h3>${statut(p)}</div>
           <p class="resume">${esc(p.resume)}</p>
@@ -76,28 +74,20 @@ const html = `<!doctype html>
 </header>
 
 <main class="conteneur">
-  <section aria-labelledby="t-vedette">
-    <h2 id="t-vedette">En ligne, à essayer</h2>
-    <div class="grille deux">${vedettes.map(carteVedette).join('')}
-    </div>
-  </section>
-
   <section aria-labelledby="t-tous">
     <h2 id="t-tous">Tous les projets</h2>
     <div class="filtres" role="group" aria-label="Filtrer par catégorie" hidden>
       <button type="button" class="actif" data-filtre="">Tous</button>${categories.map((c) => `
       <button type="button" data-filtre="${esc(c)}">${esc(c)}</button>`).join('')}
     </div>
-    <div class="grille trois">${autres.map(carte).join('')}
+    <div class="grille trois">${projets.map(carte).join('')}
     </div>
   </section>
 
-  <section aria-labelledby="t-archives">
-    <h2 id="t-archives">Archives</h2>
-    <p class="sous-titre">Les premiers essais, gardés parce qu'on apprend aussi des projets abandonnés.</p>
-    <ul class="archives">${archives.map((a) => `
-      <li><span class="a-nom">${esc(a.nom)}</span><span class="a-detail">${esc(a.detail)}</span><span class="a-annee">${esc(a.annee)}</span></li>`).join('')}
-    </ul>
+  <section aria-labelledby="t-vedette">
+    <h2 id="t-vedette">À essayer en ligne</h2>
+    <div class="grille deux">${vedettes.map(carteVedette).join('')}
+    </div>
   </section>
 </main>
 
@@ -147,4 +137,4 @@ ${projets.filter((p) => p.statut === 'en-construction').map((p) => `- ${p.nom}`)
 mkdirSync(join(racine, 'profil'), { recursive: true })
 writeFileSync(join(racine, 'profil', 'README.md'), readme)
 
-console.log(`index.html et profil/README.md générés (${projets.length} projets, ${archives.length} archives)`)
+console.log(`index.html et profil/README.md générés (${projets.length} projets)`)
