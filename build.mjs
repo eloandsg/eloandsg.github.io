@@ -60,6 +60,9 @@ const html = `<!doctype html>
 <meta property="og:description" content="${esc(profil.titre)} Apps, outils, automatisations et contenus.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE}/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
 </head>
